@@ -50,11 +50,13 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({
       </div>
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center">
+         {weather.current?.condition?.icon && (
           <img
             src={`https:${weather.current.condition.icon}`}
             alt={weather.current.condition.text}
             className="w-20 h-20 mr-4"
           />
+        )}        
           <div>
             <div className="text-6xl font-bold text-white mb-2">
               {Math.round(temp)}{unit}
