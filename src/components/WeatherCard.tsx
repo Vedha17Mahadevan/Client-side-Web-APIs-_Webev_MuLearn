@@ -50,11 +50,7 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({
       </div>
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center">
-         <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Cloud_icon.svg/512px-Cloud_icon.svg.png"
-            alt="Cloud Icon"
-            className="w-20 h-20 mr-4"
-          />    
+         <img src="/cloud.png" alt="Cloud" className="w-20 h-20 mr-4" />
           <div>
             <div className="text-6xl font-bold text-white mb-2">
               {Math.round(temp)}{unit}
